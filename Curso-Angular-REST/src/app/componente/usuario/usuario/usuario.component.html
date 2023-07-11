@@ -1,8 +1,10 @@
-<table>
-	<thead>
+<br/> <br/>
+<table class="table">
+	<thead class="thread-dark">
 		<th>ID</th>
 		<th>Nome</th>
 		<th>CPF:</th>
+		<th>Delete:</th>
 	</thead>
 
 	<tbody>
@@ -10,6 +12,7 @@
 		<td>{{student.id}}</td>
 		<td>{{student.nome}}</td>
 		<td>{{student.cpf}}</td>
+		<td><button (click)="deleteUsuario(student.id)" class="btn btn-danger">DELETE</button></td>
 		</tr>
 	</tbody>
 
