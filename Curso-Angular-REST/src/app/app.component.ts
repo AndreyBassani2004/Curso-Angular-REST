@@ -11,12 +11,5 @@ import { LoginServiceService } from './service/login-service.service';
 export class AppComponent {
   title = 'Curso-Angular-REST';
 
-  usuario = {login: '', senha: ''};
-
-  constructor(private loginService: LoginServiceService){}
-
-  public login(){
-    this.loginService.login(this.usuario);
-  }
 
 }
