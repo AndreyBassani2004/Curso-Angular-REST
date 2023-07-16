@@ -1,4 +1,12 @@
 <br/> <br/>
+<h5>Pesquisar usuario por nome</h5>
+<form class="form-inline">
+  <div class="form-group mx-sm-3 mb-2">
+    <input type="text" class="form-control" id="nome" name="nome" [(ngModel)]="nome" placeholder="Digite o nome">
+  </div>
+  <button type="button" (click)="consultarUser()" class="btn btn-primary mb-2">Pesquisar</button>
+</form>
+<br/> <br/>
 <table class="table">
 	<thead class="thread-dark">
 		<th>ID</th>
